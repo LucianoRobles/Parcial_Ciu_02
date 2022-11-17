@@ -1,7 +1,6 @@
 import { React, Fragment, useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import { Grid } from '@mui/material';
-
 import Footer from "./componentes/Footer";
 import Header from "./componentes/Header";
 import Home from "./componentes/Home";

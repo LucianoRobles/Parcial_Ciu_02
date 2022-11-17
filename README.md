@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Construccion de Interfaces - PetShop "Osiris"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Parcial 2 - Construcción de Interfaces de usuarios.
 
-## Available Scripts
+El objetivo del parcial es hacer una página WebApp prototipo en react para un PetShop. El enfoque está en la usabilidad, navegación, ser responsive, y aplicar la buenas practicas de programacion. También buscamos aplicar lo aprendido hasta el momento en la cruzada.
 
-In the project directory, you can run:
+# Resumen
 
-### `npm start`
+Para el proyecto se utilizo "react" una biblioteca de java scrip para construir interfaces de usuarios.
+El cual nos permite integrar Html, Css, Jss y agrega funcionalidades del mismo, se invoca una api, utilizamos hook para guardar estados, una libreria para maquetado y estilo, guardado de informacion en el local stoge, navegacion entre distintas paginas, creacion de componentes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Mas Detalle
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para darle estilo y maquetado utilizamos la libreria de material UI.
 
-### `npm test`
+Creamos componentes para cada item de la pagina en la carpeta componentes pueden observar cada uno.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A continuacion contaremos un poco lo implementado en cada componente.
 
-### `npm run build`
+*Header*
+El mismo es el cabezal de la pagina.
+Se puede usar para la navegacion y como punto de referencia en cada ruta.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Dentro del componente:
+Se puede encontrar una lista con las distintas rutas a la cual se puede acceder y su funcionalidad. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*Header*
+El mismo es el pie de la pagina.
+Se usa para la navegacion hacia las redes sociales y apreciar los derechos de autor
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dentro del componente:
+Se encuentra su funcionalidad
 
-### `npm run eject`
+*Home*
+La misma fue creada para ser el inicio / index de la pagina.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Dentro del componente:
+Aplicamos el uso de hook tanto useState como useEffect
+Aqui invocamos una api para la imagen que se ve en la misma utilizando fetch.
+Y distintas etiquetas del framework utilizado para maquetar y dar estilo.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+*Conocenos*
+El mismo fue creado para dar informacion extra del cliente ( petShop "Osiris").
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Dentro del componente:
+Se encuentra su funcionalidad
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+*Formulario*
+Aqui podemos apreciar un prototipo del formulario que habria que llenar para reservar un turno.
 
-## Learn More
+Dentro del componente:
+Se encuetra su funcionalidad
+Aplicamos el uso de hook useState
+Creamos funciones para el submit del form y acciones extras necesarias.
+Aplicamos buenas practicas, como utilizar la etiqueta que refencia al mismo, validacion de errores, controlamos en envio de datos.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*Carrito*
+Aqui podemos apreciar un prototipo de un carrito de compras.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Dentro del componente:
+Creamos funciones.
+Tenemos 2 distintos estados para el titulo.
+Agregamos la funcionalidad de eliminar productos del mismo.
 
-### Code Splitting
+Podemos observar su funcionalidad el mismo si esta vacio muestra un titulo diferente al que cuando esta cargado.
+Se genera una lista de los productos seleccionados en la tienda.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+*ProductItem*
+Aqui podemos apreciar un coponente customizable. La idea el mismo es mostrar productos con una maquetado predeterminado, el mismo acepta distintas variables para ser modificada su vista y poder reutilizarlo.
 
-### Analyzing the Bundle Size
+Dentro del componente:
+Se encuentra su funcionalidad
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+*App.js*
 
-### Making a Progressive Web App
+En este archivo se puede apreciar la magia de la aplicacion. 
+En el mismo se encuentra hook de estado y efecto (useState or useEffect), de estado para crear y modificar la lista del carrito de compras, de efecto para guardar el carrito en el local storage.
+Tambien podemos ver el uso de la libreria "react-router-dom" la cual nos ayuda a tener distintas pantallas y rutas dentro de nuestra pagina web
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Universidad: UnaHur (Universidad Nacional de Hurlingham) Alumno: Robles Luciano Gabriel Turno: Nocturno

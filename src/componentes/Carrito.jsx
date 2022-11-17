@@ -1,8 +1,6 @@
 import ProductItem from "./ProductItem";
 import { Grid, Typography} from '@mui/material';
 
-import '../App.css';
-
 const Carrito = ({ carrito, modificarCarrito }) => {
 
     //Funciones
