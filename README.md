@@ -17,7 +17,7 @@ Creamos componentes para cada item de la pagina en la carpeta componentes pueden
 
 A continuacion contaremos un poco lo implementado en cada componente.
 
-**Header** <br/>
+*Header*
 El mismo es el cabezal de la pagina.
 Se puede usar para la navegacion y como punto de referencia en cada ruta.
 
