@@ -44,7 +44,7 @@ const Formulario = () => {
 
     return (
         <Fragment>
-            <form onSubmit={submitForm}>
+            <form onSubmit={submitForm}  name="formularioPetShop" method="POST" data-netlify="true">
                 <Grid
                     container
                     spacing={2}
