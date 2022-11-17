@@ -77,4 +77,4 @@ En el mismo se encuentra hook de estado y efecto (useState or useEffect), de est
 Tambien podemos ver el uso de la libreria "react-router-dom" la cual nos ayuda a tener distintas pantallas y rutas dentro de nuestra pagina web
 
 # Universidad: UnaHur (Universidad Nacional de Hurlingham)
-# Alumno: Robles Luciano Gabriel Turno: Nocturno**
+# Alumno: Robles Luciano Gabriel Turno: Nocturno
